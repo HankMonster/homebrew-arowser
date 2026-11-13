@@ -7,4 +7,6 @@ brew tap HankMonster/arowser
 brew install --cask HankMonster/arowser/arowser
 ```
 
+On newer Homebrew versions that refuse third-party taps, run `brew trust hankmonster/arowser` between the two commands.
+
 The cask installs `arowser.app` to `/Applications` and links the `arowser` / `arowser-watch` CLIs into Homebrew's bin. The app is ad-hoc signed (not notarized); Homebrew strips the quarantine attribute on install, so it launches normally.
